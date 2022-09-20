@@ -57,7 +57,7 @@ function smashing_depoimentos_column( $column, $post_id ) {
     echo get_the_title($post_id);
   }
   if ( 'depoimento' === $column ) {
-    echo get_content($post_id);
+    echo get_the_content($post_id);
   }  
 }
 
