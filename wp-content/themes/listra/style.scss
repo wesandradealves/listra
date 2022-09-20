@@ -1,0 +1,403 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, a {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+p {
+	margin: 0;
+	padding: 0;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	margin: 0
+}
+.flex-fill {
+	flex: 1 !important;
+}
+
+// 
+
+html, body {
+    color: $text;
+    min-height: 100vh;
+    font-family: "Montserrat", Sans-serif;
+    section > .elementor-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #wrap {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        min-height: inherit;
+        #main {
+            flex: 1;
+            background-color: white;
+            padding-bottom: 80px;
+            .submit {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 3px;
+                background-color: $secondary;
+                color: $purple;
+                border-radius: 999px;
+                font-size: 13px; 
+                padding: 0.8rem;
+                font-weight: bold;
+                text-transform: uppercase;    
+                font-size: 13px;      
+                &.--variation {
+                    border: 2px white solid;
+                    background-color: transparent;
+                    color: white;
+                }
+                svg {
+                    margin-right: 5px;
+                    font-size: 17px;
+                }    
+                input {
+                    width: auto !important;
+                    padding: 0;
+                    font-weight: inherit;
+                    text-transform: inherit;    
+                    font-size: inherit;          
+                    background-color: transparent; 
+                    color: inherit;             
+                }
+                .wpcf7-spinner {
+                    display: none;
+                }
+            }   
+            #main-form {
+                &.opened {
+                    @media screen and (max-width: 1024px) {
+                        display: flex;
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        border-radius: 0;
+                        width: 100%;
+                        height: 100vh;
+                        flex-flow: column;
+                        justify-content: center;
+                        align-content: center;
+                        z-index: 100;    
+                    }
+                
+                }
+                .close {
+                    position: absolute;
+                    top: -30px;
+                    right: 0;
+                    font-size: 20px; 
+                    cursor: pointer;                   
+                }
+                .submit {
+                    &:not(.--variation) {
+                        padding: 0 0.8rem;
+                    }
+                }
+                background-color: $purple;
+                border-radius: 24px;
+                font-family: "Montserrat", Sans-serif;   
+                color: white;            
+                * {
+                    font-family: inherit;
+                }
+                h2 {
+                    text-align: center;
+                    font-size: 18px;
+                    font-weight: bold;
+                    line-height: 1.2;
+                    small {
+                        font-size: 14px;
+                    }
+                }
+                form, p, input, textarea, button {
+                    display: block;
+                    width: 100%;
+                    overflow: hidden;
+                    resize: none;
+                    border: 0;
+                }
+                form {
+                    p {
+                        margin-bottom: 20px;
+                        label {
+                            display: block;
+                        }
+                    }
+                    input, textarea, button {
+                        padding: 0.8rem;
+                        border-radius: 3px;
+                        font-size: 14px;
+                    }             
+                    .wpcf7-not-valid-tip {
+                        display: block;
+                        margin-top: 5px;
+                        font-size: 12px;
+                    }
+                    .wpcf7-response-output {
+                        padding: 15px 45px 0 !important;
+                        margin: 0 !important;
+                        border: 0 !important;
+                        text-align: center;
+                        line-height: 1.2 !important;
+                        font-size: 14px !important;
+                    }                    
+                }                
+            }       
+            .alert-box {
+                background-color: $secondary;
+                border-radius: 20px;
+                padding: 15px 20px;
+                p {
+                    font-size: 18px;
+                    line-height: 1.2;
+                    color: black;
+                }
+                &-header {
+                    color: $purple;
+                    font-size: 24px;
+                    font-weight: bold;
+                    margin-bottom: 8px;
+                    .icon {
+                        height: 53px;
+                        width: 53px;
+                        background-color: $purple;
+                        border-radius: 999px;
+                        color: white;   
+                        margin-right: 20px;
+                        font-size: 35px;
+                        svg {
+                            margin: auto;
+                        }
+                    }
+                }
+            }  
+            .boxes {
+                .elementor-container {
+                    @media screen and (min-width: 810px) {
+                        max-width: 810px;
+                    }
+                }
+                .better-price {
+                    .elementor-icon {
+                        border: 2px $purple solid;
+                        border-radius: 999px;
+                        padding: 5px;
+                    }
+                }
+                .owl-stage {
+                    display: flex;
+                    align-items: stretch;
+                    .owl-item {
+                        .elementor-element {
+                            height: 100%;
+                            background: white;
+                            border-radius: 20px;
+                            margin: 0 15px;
+                            box-shadow: 0px 4px 6px rgba(211, 199, 199, 0.2);
+                            padding: 30px;
+                            color: $purple;
+                            font-weight: bold;
+                            font-size: 24px;
+                        }
+                    }
+                }
+
+            }   
+            .entenda-os-riscos {
+                .submit {
+                    margin: 0 auto;
+                    max-width: 339px;
+                }
+                .entenda-os-riscos-heading .elementor-widget-wrap {
+                    display: flex;
+                    flex-flow: row wrap;
+                    align-items: center;
+                    justify-content: space-between;
+                    > * {
+                        margin: 0;
+                        &:first-child {
+                            flex: 0 0 auto; 
+                            width: 50px;
+                            margin-right: 24px;
+                            & + * {
+                                flex: 1;
+                            }
+                        }
+                    }
+                }                
+            }  
+            b, strong {
+                font-weight: bold;
+            }   
+            .elementor-accordion-item {
+                border-radius: 10px;
+                overflow: hidden;
+                &:not(:last-of-type) {
+                    margin-bottom: 15px;
+                }
+                svg path {
+                    fill: $purple;
+                }                     
+                display: block;
+            }
+            #depoimentos {
+                .elementor-widget-container {
+                    display: flex;  
+                    .elementor-shortcode {
+                        box-sizing: content-box;
+                        width: 0; 
+                        flex-basis: 100%; 
+                    }
+                }
+            }
+            .owl-depoimentos {
+                .owl-dots .owl-dot span {
+                    background-color: white;
+                    border: 2px rgba($lightblue, .5) solid;
+                }
+                .owl-dots .owl-dot.active span, 
+                .owl-theme .owl-dots .owl-dot:hover span {
+                    background-color: rgba($lightblue, .5);
+                    border: 0;
+                }
+                .owl-item {
+                    .d-flex {
+                        background-color: rgba($lightblue, .1);
+                        border-radius: 10px;
+                        color: $text;
+                        margin: 0 auto;                        
+                        img {
+                            width: 200px;
+                            margin: 0 auto;
+                            @media screen and (min-width: 810px) {
+                                width: 100%;
+                            }
+                            max-width: inherit;
+                        }
+                        h3 {
+                            text-align: right;
+                            & + p {
+                                text-align: right;
+                            }
+                            @media screen and (min-width: 810px) {
+                                text-align: left;
+                                & + p {
+                                    text-align: left;
+                                }
+                            }
+                        }
+                        p {
+                            font-size: 1rem;
+                            line-height: 1.3;
+                            small {
+                                font-size: 80%;
+                            }
+                        }
+                    }
+
+                }
+            }          
+        }
+    }    
+    &.error404 {
+        #wrap {
+            #main {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                background-color: rgba($lightblue, .1);
+                font-weight: bold;
+                font-size: 3rem;
+                text-align: center;
+                h2 {
+                    small {
+                        font-size: 50%;
+                    }
+                }
+            }
+        }
+    }   
+}
+
+#fixed-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    #orcamento {
+        width: 100%;
+    }
+    #float-whatsapp {
+        font-size: 45px;
+        margin: 0;
+        padding: 0  ;
+    }    
+    .elementor-widget-wrap  {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: center;
+        > * {
+            margin: 0;
+            padding: 0;
+            flex: 1;
+            &:first-child {
+                flex: 0 0 auto;
+                width: 45px;
+            }
+        }
+    }
+}    
+

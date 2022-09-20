@@ -1,0 +1,4 @@
+name: listra
+recipe: wordpress
+config:
+  webroot: .

@@ -1,0 +1,255 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+.flex-fill {
+  flex: 1 !important;
+}
+html, body {
+  background-color: #1e73be;
+  color: #444444;
+  min-height: 100vh;
+  font-family: "Montserrat", Sans-serif;
+}
+html #wrap, body #wrap {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  min-height: inherit;
+}
+html #wrap #main, body #wrap #main {
+  flex: 1;
+  background-color: white;
+  padding-bottom: 80px;
+}
+html #wrap #main .submit, body #wrap #main .submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  background-color: #ecbc4e;
+  color: #32137b;
+  border-radius: 999px;
+  font-size: 13px;
+  padding: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+html #wrap #main .submit.--variation, body #wrap #main .submit.--variation {
+  border: 2px white solid;
+  background-color: transparent;
+  color: white;
+}
+html #wrap #main .submit svg, body #wrap #main .submit svg {
+  margin-right: 5px;
+  font-size: 17px;
+}
+html #wrap #main .submit input, body #wrap #main .submit input {
+  width: auto;
+  padding: 0;
+  font-weight: inherit;
+  text-transform: inherit;
+  font-size: inherit;
+  background-color: transparent;
+  color: inherit;
+}
+html #wrap #main .submit .wpcf7-spinner, body #wrap #main .submit .wpcf7-spinner {
+  display: none;
+}
+html #wrap #main .main-form, body #wrap #main .main-form {
+  background-color: #32137b;
+  border-radius: 24px;
+  font-family: "Montserrat", Sans-serif;
+  color: white;
+}
+html #wrap #main .main-form *, body #wrap #main .main-form * {
+  font-family: inherit;
+}
+html #wrap #main .main-form h2, body #wrap #main .main-form h2 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+html #wrap #main .main-form h2 small, body #wrap #main .main-form h2 small {
+  font-size: 14px;
+}
+html #wrap #main .main-form form, html #wrap #main .main-form p, html #wrap #main .main-form input, html #wrap #main .main-form textarea, html #wrap #main .main-form button, body #wrap #main .main-form form, body #wrap #main .main-form p, body #wrap #main .main-form input, body #wrap #main .main-form textarea, body #wrap #main .main-form button {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  resize: none;
+  border: 0;
+}
+html #wrap #main .main-form form p, body #wrap #main .main-form form p {
+  margin-bottom: 20px;
+}
+html #wrap #main .main-form form p label, body #wrap #main .main-form form p label {
+  display: block;
+}
+html #wrap #main .main-form form input, html #wrap #main .main-form form textarea, html #wrap #main .main-form form button, body #wrap #main .main-form form input, body #wrap #main .main-form form textarea, body #wrap #main .main-form form button {
+  padding: 0.8rem;
+  border-radius: 3px;
+  font-size: 14px;
+}
+html #wrap #main .main-form form .wpcf7-not-valid-tip, body #wrap #main .main-form form .wpcf7-not-valid-tip {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+}
+html #wrap #main .main-form form .wpcf7-response-output, body #wrap #main .main-form form .wpcf7-response-output {
+  padding: 15px 45px 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+  text-align: center;
+  line-height: 1.2 !important;
+  font-size: 14px !important;
+}
+html #wrap #main .alert-box, body #wrap #main .alert-box {
+  background-color: #ecbc4e;
+  border-radius: 20px;
+  padding: 15px 20px;
+}
+html #wrap #main .alert-box p, body #wrap #main .alert-box p {
+  font-size: 18px;
+  line-height: 1.2;
+  color: black;
+}
+html #wrap #main .alert-box-header, body #wrap #main .alert-box-header {
+  color: #32137b;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+html #wrap #main .alert-box-header .icon, body #wrap #main .alert-box-header .icon {
+  height: 53px;
+  width: 53px;
+  background-color: #32137b;
+  border-radius: 999px;
+  color: white;
+  margin-right: 20px;
+  font-size: 35px;
+}
+html #wrap #main .alert-box-header .icon svg, body #wrap #main .alert-box-header .icon svg {
+  margin: auto;
+}
+@media screen and (min-width: 810px) {
+  html #wrap #main .boxes .elementor-container, body #wrap #main .boxes .elementor-container {
+    max-width: 810px;
+  }
+}
+html #wrap #main .boxes .better-price .elementor-icon, body #wrap #main .boxes .better-price .elementor-icon {
+  border: 2px #32137b solid;
+  border-radius: 999px;
+  padding: 5px;
+}
+html #wrap #main .boxes .elementor-widget-wrap.elementor-element-populated, body #wrap #main .boxes .elementor-widget-wrap.elementor-element-populated {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-flow: row;
+}
+html #wrap #main .boxes .elementor-widget-wrap.elementor-element-populated > .elementor-element, body #wrap #main .boxes .elementor-widget-wrap.elementor-element-populated > .elementor-element {
+  background: white;
+  border-radius: 20px;
+  margin: 0 15px;
+  box-shadow: 0px 4px 6px rgba(211, 199, 199, 0.2);
+  padding: 30px;
+  color: #32137b;
+  font-weight: bold;
+  font-size: 24px;
+}
+html #wrap #main .boxes .elementor-widget-wrap.elementor-element-populated > .elementor-element:first-child, body #wrap #main .boxes .elementor-widget-wrap.elementor-element-populated > .elementor-element:first-child {
+  margin-left: 0;
+}
+html #wrap #main .boxes .elementor-widget-wrap.elementor-element-populated > .elementor-element:last-child, body #wrap #main .boxes .elementor-widget-wrap.elementor-element-populated > .elementor-element:last-child {
+  margin-right: 0;
+}
+html #wrap #main .entenda-os-riscos .submit, body #wrap #main .entenda-os-riscos .submit {
+  margin: 0 auto;
+  max-width: 339px;
+}
+html #wrap #main .entenda-os-riscos .entenda-os-riscos-heading .elementor-widget-wrap, body #wrap #main .entenda-os-riscos .entenda-os-riscos-heading .elementor-widget-wrap {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+html #wrap #main .entenda-os-riscos .entenda-os-riscos-heading .elementor-widget-wrap > *, body #wrap #main .entenda-os-riscos .entenda-os-riscos-heading .elementor-widget-wrap > * {
+  margin: 0;
+}
+html #wrap #main .entenda-os-riscos .entenda-os-riscos-heading .elementor-widget-wrap > *:first-child, body #wrap #main .entenda-os-riscos .entenda-os-riscos-heading .elementor-widget-wrap > *:first-child {
+  flex: 0 0 auto;
+  width: 50px;
+  margin-right: 24px;
+}
+html #wrap #main .entenda-os-riscos .entenda-os-riscos-heading .elementor-widget-wrap > *:first-child + *, body #wrap #main .entenda-os-riscos .entenda-os-riscos-heading .elementor-widget-wrap > *:first-child + * {
+  flex: 1;
+}
+html #wrap #main b, html #wrap #main strong, body #wrap #main b, body #wrap #main strong {
+  font-weight: bold;
+}
+html #wrap #main .elementor-accordion-item, body #wrap #main .elementor-accordion-item {
+  border-radius: 10px;
+  overflow: hidden;
+  display: block;
+}
+html #wrap #main .elementor-accordion-item:not(:last-of-type), body #wrap #main .elementor-accordion-item:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+html #wrap #main .elementor-accordion-item svg path, body #wrap #main .elementor-accordion-item svg path {
+  fill: #32137b;
+}
+html #wrap #main .owl-depoimentos .owl-item .d-flex, body #wrap #main .owl-depoimentos .owl-item .d-flex {
+  color: #444444;
+}
+html #wrap #main .owl-depoimentos .owl-item .d-flex img, body #wrap #main .owl-depoimentos .owl-item .d-flex img {
+  width: 200px;
+  max-width: inherit;
+}
+html #wrap #main .owl-depoimentos .owl-item .d-flex p, body #wrap #main .owl-depoimentos .owl-item .d-flex p {
+  line-height: 1.2;
+}
+html #wrap #main .owl-depoimentos .owl-item .d-flex p small, body #wrap #main .owl-depoimentos .owl-item .d-flex p small {
+  font-size: 80%;
+}
