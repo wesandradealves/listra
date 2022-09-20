@@ -346,7 +346,16 @@ html, body {
                     }
 
                 }
-            }          
+            }        
+            .elementor-section.elementor-inner-section.elementor-element.elementor-element-0bd889f.elementor-section-content-middle.elementor-section-boxed.elementor-section-height-default {
+                @media screen and (max-width: 1024px) {
+                    background: rgba($lightblue, .05);
+                    margin-left: -35px;
+                    margin-right: -35px;
+                    width: calc(100% + 60px);
+                    padding: 35px;
+                }
+            }              
         }
     }    
     &.error404 {
